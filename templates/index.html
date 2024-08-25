@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+    <h2>Welcome, {{ session['username'] }}!</h2>
+    <p>You are logged in. <a href="{{ url_for('logout') }}">Logout</a></p>
+</div>
+{% endblock %}
